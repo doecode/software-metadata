@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated doecode -->
+      <package
+            uri="http://github.com/doecode/doecode"
+            class="doecode.DoecodePackage"
+            genModel="model/doecode.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated doecode -->
+      <package
+            uri="http://www.w3.org/ns/adms"
+            class="adms.AdmsPackage"
+            genModel="model/doecode.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated doecode -->
+      <parser
+            type="adms"
+            class="adms.util.AdmsResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated doecode -->
+      <package
+            uri="http://xmlns.com/foaf/0.1/"
+            class="foaf.FoafPackage"
+            genModel="model/doecode.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated doecode -->
+      <package
+            uri="https://www.w3.org/ns/org#"
+            class="org.OrgPackage"
+            genModel="model/doecode.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated doecode -->
+      <package
+            uri="http://www.w3.org/2004/02/skos/core#"
+            class="skos.SkosPackage"
+            genModel="model/doecode.genmodel"/>
+   </extension>
+
+</plugin>

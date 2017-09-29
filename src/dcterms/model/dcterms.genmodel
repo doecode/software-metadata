@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dcterms/src" modelPluginID="dcterms" modelName="Dcterms"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>dcterms.ecore</foreignModel>
+  <genPackages prefix="Dcterms" disposableProviderFactory="true" ecorePackage="dcterms.ecore#/">
+    <genClasses ecoreClass="dcterms.ecore#//Agent">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dcterms.ecore#//Agent/resource"/>
+    </genClasses>
+    <genClasses ecoreClass="dcterms.ecore#//Resource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcterms.ecore#//Resource/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcterms.ecore#//Resource/rights"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcterms.ecore#//Resource/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcterms.ecore#//Resource/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcterms.ecore#//Resource/subject"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dcterms.ecore#//Resource/creator"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Foaf" ecorePackage="../../foaf/model/foaf.ecore#/">
+    <genClasses ecoreClass="../../foaf/model/foaf.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../foaf/model/foaf.ecore#//Person/firstName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../foaf/model/foaf.ecore#//Person/familyName"/>
+    </genClasses>
+    <genClasses ecoreClass="../../foaf/model/foaf.ecore#//Document">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../foaf/model/foaf.ecore#//Document/doc"/>
+    </genClasses>
+    <genClasses ecoreClass="../../foaf/model/foaf.ecore#//Agent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../foaf/model/foaf.ecore#//Agent/mbox_sha1sum"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

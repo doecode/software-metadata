@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/foaf/src" modelPluginID="foaf" modelName="Foaf"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>foaf.ecore</foreignModel>
+  <genPackages prefix="Foaf" disposableProviderFactory="true" ecorePackage="foaf.ecore#/">
+    <genClasses ecoreClass="foaf.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute foaf.ecore#//Person/firstName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute foaf.ecore#//Person/familyName"/>
+    </genClasses>
+    <genClasses ecoreClass="foaf.ecore#//Document"/>
+    <genClasses ecoreClass="foaf.ecore#//Agent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute foaf.ecore#//Agent/mbox_sha1sum"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Rdfs" ecorePackage="../../rdfs/model/rdfs.ecore#/">
+    <genClasses image="false" ecoreClass="../../rdfs/model/rdfs.ecore#//Resource"/>
+    <genClasses image="false" ecoreClass="../../rdfs/model/rdfs.ecore#//Class"/>
+  </genPackages>
+  <genPackages prefix="Rdf" ecorePackage="../../rdf/model/rdf.ecore#/">
+    <genClasses image="false" ecoreClass="../../rdf/model/rdf.ecore#//Property"/>
+  </genPackages>
+</genmodel:GenModel>

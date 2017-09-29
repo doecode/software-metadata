@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated doecode -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="doecode.presentation.DoecodeModelWizardID"
+            name="%_UI_DoecodeModelWizard_label"
+            class="doecode.presentation.DoecodeModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DoecodeModelFile.gif">
+         <description>%_UI_DoecodeModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated doecode -->
+      <editor
+            id="doecode.presentation.DoecodeEditorID"
+            name="%_UI_DoecodeEditor_label"
+            icon="icons/full/obj16/DoecodeModelFile.gif"
+            extensions="doecode"
+            class="doecode.presentation.DoecodeEditor"
+            contributorClass="doecode.presentation.DoecodeActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated doecode -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="adms.presentation.AdmsModelWizardID"
+            name="%_UI_AdmsModelWizard_label"
+            class="adms.presentation.AdmsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AdmsModelFile.gif">
+         <description>%_UI_AdmsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated doecode -->
+      <editor
+            id="adms.presentation.AdmsEditorID"
+            name="%_UI_AdmsEditor_label"
+            icon="icons/full/obj16/AdmsModelFile.gif"
+            extensions="adms"
+            class="adms.presentation.AdmsEditor"
+            contributorClass="adms.presentation.AdmsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated doecode -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="foaf.presentation.FoafModelWizardID"
+            name="%_UI_FoafModelWizard_label"
+            class="foaf.presentation.FoafModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/FoafModelFile.gif">
+         <description>%_UI_FoafModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated doecode -->
+      <editor
+            id="foaf.presentation.FoafEditorID"
+            name="%_UI_FoafEditor_label"
+            icon="icons/full/obj16/FoafModelFile.gif"
+            extensions="foaf"
+            class="foaf.presentation.FoafEditor"
+            contributorClass="foaf.presentation.FoafActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated doecode -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.presentation.OrgModelWizardID"
+            name="%_UI_OrgModelWizard_label"
+            class="org.presentation.OrgModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/OrgModelFile.gif">
+         <description>%_UI_OrgModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated doecode -->
+      <editor
+            id="org.presentation.OrgEditorID"
+            name="%_UI_OrgEditor_label"
+            icon="icons/full/obj16/OrgModelFile.gif"
+            extensions="org"
+            class="org.presentation.OrgEditor"
+            contributorClass="org.presentation.OrgActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated doecode -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="skos.presentation.SkosModelWizardID"
+            name="%_UI_SkosModelWizard_label"
+            class="skos.presentation.SkosModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SkosModelFile.gif">
+         <description>%_UI_SkosModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated doecode -->
+      <editor
+            id="skos.presentation.SkosEditorID"
+            name="%_UI_SkosEditor_label"
+            icon="icons/full/obj16/SkosModelFile.gif"
+            extensions="skos"
+            class="skos.presentation.SkosEditor"
+            contributorClass="skos.presentation.SkosActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

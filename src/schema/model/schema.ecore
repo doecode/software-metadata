@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="schema" nsURI="http://schema.org/" nsPrefix="schema">
+  <eClassifiers xsi:type="ecore:EClass" name="Thing" eSuperTypes="../../rdfs/model/rdfs.ecore#//Resource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CreativeWork" eSuperTypes="#//Thing"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SoftwareSourceCode" eSuperTypes="#//CreativeWork">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codeRepository" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SoftwareApplication" eSuperTypes="#//CreativeWork">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operatingSystem" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

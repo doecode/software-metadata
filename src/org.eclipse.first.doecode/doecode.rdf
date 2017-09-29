@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="platform:/resource/org.eclipse.first.doecode/doecode.rdf#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:schema="http://schema.org/"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description rdf:about="platform:/resource/org.eclipse.first.doecode/doecode.rdf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<owl:imports rdf:resource="http://purl.org/dc/dcmitype/Software"/>
+	<owl:imports rdf:resource="http://schema.org/"/>
+	<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+	<owl:imports rdf:resource="http://www.w3.org/ns/adms"/>
+	<owl:imports rdf:resource="http://www.w3.org/ns/org"/>
+	<owl:imports rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+	<owl:imports rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:Description>
+
+</rdf:RDF>

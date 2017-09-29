@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="doecode" nsURI="http://github.com/doecode/doecode" nsPrefix="github.com.doecode">
+  <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+    <details key="namespace" value="doecode"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Record">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="org" upperBound="-1" eType="ecore:EClass ../org/model/org.ecore#//Organization"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="doc" upperBound="-1" eType="ecore:EClass ../foaf/model/foaf.ecore#//Document"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="id" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass ../adms/model/adms.ecore#//Identifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person" lowerBound="1"
+        upperBound="-1" eType="ecore:EClass ../foaf/model/foaf.ecore#//Person"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" lowerBound="1" eType="ecore:EClass ../dctype/model/dctype.ecore#//Software"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="codeRepository" lowerBound="1"
+        upperBound="-1" eType="ecore:EClass ../schema/model/schema.ecore#//SoftwareSourceCode">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="namespace" value="schema"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

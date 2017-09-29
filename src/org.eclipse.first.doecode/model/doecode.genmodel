@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.eclipse.first.doecode/src" modelPluginID="org.eclipse.first.doecode"
+    modelName="Doecode" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    language="" operationReflection="true" importOrganizing="true">
+  <foreignModel>../doecode.ecore</foreignModel>
+  <genPackages prefix="Doecode" disposableProviderFactory="true" ecorePackage="doecode.ecore#/">
+    <genClasses ecoreClass="doecode.ecore#//Software">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doecode.ecore#//Software/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doecode.ecore#//Software/creator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doecode.ecore#//Software/issued"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doecode.ecore#//Software/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doecode.ecore#//Software/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doecode.ecore#//Software/rights"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doecode.ecore#//Software/codeRepository"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference doecode.ecore#//Software/isReferencedBy"/>
+    </genClasses>
+    <genClasses ecoreClass="doecode.ecore#//Identifier">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference doecode.ecore#//Identifier/identifier"/>
+    </genClasses>
+    <genClasses ecoreClass="doecode.ecore#//Person">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doecode.ecore#//Person/creator"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference doecode.ecore#//Person/isMemberOf"/>
+    </genClasses>
+    <genClasses ecoreClass="doecode.ecore#//Document">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doecode.ecore#//Document/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doecode.ecore#//Document/date"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference doecode.ecore#//Document/references"/>
+    </genClasses>
+    <genClasses ecoreClass="doecode.ecore#//Role"/>
+    <genClasses ecoreClass="doecode.ecore#//org"/>
+    <genClasses ecoreClass="doecode.ecore#//Record">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference doecode.ecore#//Record/org"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference doecode.ecore#//Record/software"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Adms" resource="XML" disposableProviderFactory="true" ecorePackage="adms.ecore#/">
+    <genClasses ecoreClass="adms.ecore#//Identifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute adms.ecore#//Identifier/notation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute adms.ecore#//Identifier/schemeAgency"/>
+    </genClasses>
+    <genClasses ecoreClass="adms.ecore#//Asset">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference adms.ecore#//Asset/identifier"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Foaf" disposableProviderFactory="true" ecorePackage="foaf.ecore#/">
+    <genClasses ecoreClass="foaf.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute foaf.ecore#//Person/firstName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute foaf.ecore#//Person/familyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute foaf.ecore#//Person/mbox_sha1sum"/>
+    </genClasses>
+    <genClasses ecoreClass="foaf.ecore#//Document"/>
+  </genPackages>
+  <genPackages prefix="Org" disposableProviderFactory="true" ecorePackage="org.ecore#/">
+    <genClasses ecoreClass="org.ecore#//Organization">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference org.ecore#//Organization/hasMember"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference org.ecore#//Organization/labels"/>
+    </genClasses>
+    <genClasses ecoreClass="org.ecore#//Role"/>
+  </genPackages>
+  <genPackages prefix="Skos" disposableProviderFactory="true" ecorePackage="skos.ecore#/">
+    <genClasses ecoreClass="skos.ecore#//Concept">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute skos.ecore#//Concept/prefLabel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute skos.ecore#//Concept/altLabel"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

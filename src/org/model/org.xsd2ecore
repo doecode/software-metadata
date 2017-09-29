@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="file:/K:/2017%20projects/DOECode/org.xsd#/"
+    outputs="org.ecore#/" topToBottom="true">
+  <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition"
+      outputs="org.ecore#//OrgMember0">
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="org.ecore#//OrgMember0/OrganizationalUnit"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="org.ecore#//OrgMember0/Organization"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="org.ecore#//OrgMember0/Role"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="org.ecore#//OrgMember0/ChangeEvent"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=4"
+        outputs="org.ecore#//OrgMember0/Site"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=5"
+        outputs="org.ecore#//OrgMember0/Membership"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=6"
+        outputs="org.ecore#//OrgMember0/FormalOrganization"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=7"
+        outputs="org.ecore#//OrgMember0/OrganizationalCollaboration"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=8"
+        outputs="org.ecore#//OrgMember0/Post"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=9"
+        outputs="org.ecore#//OrgMember0/Sound"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=10"
+        outputs="org.ecore#//OrgMember0/Text"/>
+    <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition/XSDSimpleTypeDefinition/XSDEnumerationFacet=11"
+        outputs="org.ecore#//OrgMember0/PhysicalObject"/>
+  </nested>
+  <nested inputs="file:/K:/2017%20projects/DOECode/org.xsd#//org;XSDSimpleTypeDefinition"
+      outputs="org.ecore#//Org"/>
+</xsd2ecore:XSD2EcoreMappingRoot>

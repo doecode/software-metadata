@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="org" nsURI="https://www.w3.org/ns/org#" nsPrefix="">
+  <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+    <details key="namespace" value="org"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Organization" eSuperTypes="../../foaf/model/foaf.ecore#//Agent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasMember" upperBound="-1"
+        eType="ecore:EClass ../../foaf/model/foaf.ecore#//Person"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role" lowerBound="1" upperBound="-1"
+        eType="#//Role" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="prefLabel" lowerBound="1"
+        upperBound="-1" eType="ecore:EClass ../../skos/model/skos.ecore#//Concept">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="namespace" value="skos"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="altLabel" upperBound="-1"
+        eType="ecore:EClass ../../skos/model/skos.ecore#//Concept">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="namespace" value="skos"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Role" eSuperTypes="../../skos/model/skos.ecore#//Concept"/>
+</ecore:EPackage>
